@@ -15,7 +15,8 @@ body {
 
 }
 
-h2, .white {
+h2,
+.white {
     color: #fff;
 }
 
@@ -91,6 +92,10 @@ a {
     padding-left: 10px;
 }
 
+.justify-text {
+    text-align: justify;
+}
+
 /* media queres */
 @media (max-width: 780px) {
     .grid-2 {
@@ -107,4 +112,12 @@ a {
         padding-left: 1.5rem;
         padding-top: 2rem;
     }
+}
+
+summary::-webkit-details-marker {
+    color: blue;
+}
+
+summary:focus {
+    outline-style: none;
 }
