@@ -1,7 +1,7 @@
 /* global */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-.grid-2 {
+.grid-page {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -12,7 +12,6 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #101214;
     color: #7A7C80;
-
 }
 
 h2,
@@ -25,47 +24,47 @@ a {
     text-decoration: none;
 }
 
-/* section 1 */
-.section-1 {
+/* section contacts */
+.section-contacts {
     padding-top: 40vh;
     text-align: center;
 }
 
-.section-1 p {
+.section-contacts p {
     font-size: 1.1rem;
     padding-bottom: 8px;
     margin: 0;
 }
 
-.section-1 h2 {
+.section-contacts h2 {
     font-size: 1.7rem;
     margin-bottom: 8px;
 }
 
-.section-1 a {
+.section-contacts a {
     font-size: 1.5rem;
     padding: 10px;
 }
 
-/* section 2 */
-.section-2 {
+/* section info */
+.section-info {
     padding-top: 16vh;
     width: 70%;
 }
 
-.section-2 h2 {
+.section-info h2 {
     font-size: 1.7rem;
     margin-bottom: 8px;
     margin-top: 8px;
 }
 
-.section-2 p {
+.section-info p {
     font-size: 1.1rem;
     padding-bottom: 8px;
     margin: 0;
 }
 
-.section-2 a {
+.section-info a {
     display: block;
     padding: 5px;
     font-size: 1.2rem;
@@ -74,14 +73,14 @@ a {
 }
 
 /* animations / utilities */
-.section-2 a:hover {
+.section-info a:hover {
     font-size: 1.3rem;
     color: #fff;
     cursor: pointer;
     transition: 0.2s;
 }
 
-.section-1 a:hover {
+.section-contacts a:hover {
     color: #fff;
     cursor: pointer;
     transition: 0.3s;
@@ -96,21 +95,29 @@ a {
     text-align: justify;
 }
 
+.project-info {
+    margin-bottom: 8px;
+}
+
+summary:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
 /* media queres */
 @media (max-width: 780px) {
-    .grid-2 {
+    .grid-page {
         grid-template-columns: 1fr;
     }
 
-    .section-1 {
+    .section-contacts {
         padding: 0;
         padding-top: 5rem;
     }
 
-    .section-2 {
-        padding: 0;
-        padding-left: 1.5rem;
-        padding-top: 2rem;
+    .section-info {
+        padding: 2rem 1.5rem 1.5rem;
+        width: fit-content;
     }
 }
 
